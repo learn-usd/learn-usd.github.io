@@ -2,9 +2,9 @@
 version: 1
 project:
   id: cfa65979-bd69-4d96-8c42-2cf826fa4778
-  # title:
-  # description:
-  # keywords: []
+  title: OpenUSD in One Weekend
+  description: A series of tutorials on how to use OpenUSD to create and edit USD files.
+  keywords: [USD, OpenUSD, One Weekend, Tutorials, Blender]
   github: https://github.com/learn-usd/learn-usd.github.io
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
