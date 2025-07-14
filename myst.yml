@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: cfa65979-bd69-4d96-8c42-2cf826fa4778
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/learn-usd/learn-usd.github.io
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
