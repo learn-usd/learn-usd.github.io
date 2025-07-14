@@ -36,7 +36,9 @@ jobs:
         with:
           node-version: 18.x
       - name: Install Jupyter Book (via myst)
-        run: npm install -g jupyter-book
+        run: |
+          pip install -U pip
+          pip install "jupyter-book>=2.0.0a0"
       - name: Build HTML Assets
         run: jupyter book build --html
       - name: Upload artifact
