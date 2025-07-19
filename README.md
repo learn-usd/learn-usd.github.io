@@ -3,9 +3,13 @@ title: OpenUSD in One Weekend
 author: 
     - name: Linfan Zhang
       github: linfanz
-      linkedin: https://www.linkedin.com/in/linfan-zhang/
+      email: linfanz95@outlook.com
     - name: Andy Green
+      github: andy250
+      email: andy250@gmail.com
     - name: Yizhou Zhao
+      github: yizhouzhao
+      email: yizzhao@nvidia.com
 ---
 
 # OpenUSD in One Weekend
