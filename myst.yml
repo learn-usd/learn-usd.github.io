@@ -13,8 +13,20 @@ project:
     - title: Day One
       children:
         - file: chapters/1.md
+        - file: chapters/2.md
     
 site:
+  nav:
+    - title: Home
+      url: https://learn-usd.github.io/
+    - title: Code
+      url: https://github.com/learn-usd/learn-usd.github.io/tree/main/
+    - title: About
+      url: https://learn-usd.github.io/about/
+    - title: Help?
+      children:
+        - title: Ask a Question?
+          url: https://github.com/learn-usd/learn-usd.github.io/issues/new
   template: book-theme
   options:
     favicon: images/favicon.ico
