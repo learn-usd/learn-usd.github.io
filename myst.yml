@@ -15,6 +15,9 @@ project:
         - file: chapters/1.md
         - file: chapters/2.md
         - file: chapters/3.md
+    - title: Code and Assets
+      children:
+        - file: code_and_assets/Ch03/code_ch03.md
     
 site:
   nav:
