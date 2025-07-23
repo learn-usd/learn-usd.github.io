@@ -1,4 +1,4 @@
-## 5.1 Setting Up the Scene
+# Chapter 5
 Set working directory to "Ch04" folder
 ```python
 import os   
