@@ -26,7 +26,7 @@ project:
         - file: chapters/7.md
         - file: chapters/8.md
         - file: chapters/9.md
-    - title: Day Three
+    - title: After the Weekend
       children:
         - file: chapters/10.md
         - file: chapters/11.md
@@ -40,6 +40,9 @@ project:
         - file: code_and_assets/Ch07/code_ch07.md
         - file: code_and_assets/Ch08/code_ch08.md
         - file: code_and_assets/Ch09/code_ch09.md
+    - title: Appendix
+      children:
+        - file: appendix/d.md
     
 site:
   nav:
