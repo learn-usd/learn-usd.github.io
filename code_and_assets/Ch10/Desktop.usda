@@ -1,0 +1,453 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    endTimeCode = 100
+    metersPerUnit = 0.01
+    startTimeCode = 0
+    timeCodesPerSecond = 60
+    upAxis = "Y"
+)
+
+def Xform "World"
+{
+    def "Desk" (
+        delete payload = @file:/D:/Andy/Omniverse Projects/DIGITAL BOT LABS/Yizhou_ Book/USD_Composer_Projects/Ch05_Desktop/Desk.usd@
+        prepend payload = @./Assets/Desk.usd@
+    )
+    {
+        token visibility = "inherited"
+        double xformOp:rotateX:unitsResolve = 0
+        float3 xformOp:rotateXYZ = (0, 0, 0)
+        float3 xformOp:scale = (100, 100, 100)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale", "xformOp:rotateX:unitsResolve"]
+
+        over "Desktop"
+        {
+            token visibility = "inherited"
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+        }
+
+        over "materials"
+        {
+            over "Desktop"
+            {
+                over "MDL_ImageTexture"
+                {
+                    float inputs:contrast = 0.9
+                }
+            }
+        }
+
+        def "Fan" (
+            delete payload = @file:/D:/Andy/Omniverse Projects/DIGITAL BOT LABS/Yizhou_ Book/USD_Composer_Projects/Ch05_Desktop/Fan.usd@
+            prepend payload = @./Assets/Fan.usd@
+        )
+        {
+            float3 xformOp:rotateXYZ = (0, -40, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.7000000104308128, 0.03, -0.2)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            over "Base"
+            {
+                over "Oscillating_Joint"
+                {
+                    float3 xformOp:rotateXYZ = (0, 0, 0)
+
+                    over "Motor"
+                    {
+                        over "Blades"
+                        {
+                            float3 xformOp:rotateXYZ = (0, 0, 0)
+                        }
+                    }
+                }
+            }
+        }
+
+        def "Lamp" (
+            delete payload = @./Lamp.usd@
+            prepend payload = @./Assets/Lamp.usd@
+        )
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.6583504819927698, 0.030000000000008815, -0.14568506077086826)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            over "materials"
+            {
+                over "Lamp_Shade"
+                {
+                    over "preview_Principled_BSDF"
+                    {
+                        color3f inputs:diffuseColor = (0.8918919, 0.40030864, 0.29270583)
+                        color3f inputs:emissiveColor = (0.12741315, 0.048916847, 0.018693822) (
+                            customData = {
+                                float3 default = (0, 0, 0)
+                            }
+                            hidden = false
+                            renderType = "color"
+                        )
+                        float inputs:opacity = 1 (
+                            customData = {
+                                float default = 1
+                                dictionary range = {
+                                    float max = 1
+                                    float min = 0
+                                }
+                            }
+                            hidden = false
+                        )
+                        color3f inputs:specularColor = (0.000001, 9.9999e-7, 9.9999e-7) (
+                            customData = {
+                                float3 default = (0, 0, 0)
+                            }
+                            hidden = false
+                            renderType = "color"
+                        )
+                    }
+                }
+
+                over "Lamp_Metal" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "Bulb"
+            {
+                over "SphereLight"
+                {
+                    float inputs:intensity = 500
+                    float inputs:shaping:cone:angle = 62.100002
+                    float inputs:shaping:cone:softness = 0
+                    float inputs:shaping:focus = 9.2
+                    bool inputs:shaping:ies:normalize = 0
+                    bool treatAsPoint = 1
+                }
+            }
+
+            over "Metal_Parts" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Desk/Fan/materials/Metal> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        def "Monitor" (
+            delete payload = @file:/D:/Andy/Omniverse Projects/DIGITAL BOT LABS/Yizhou_ Book/USD_Composer_Projects/Ch05_Desktop/Assets/Monitor.usd@
+            prepend payload = @./Assets/Monitor.usd@
+        )
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0, 0.03, -0.20000000298023224)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def "Mat" (
+            prepend payload = @./Assets/Mat.usd@
+        )
+        {
+            float3 xformOp:rotateXYZ = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.04, 0.030000000000000852, 0.2)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            over "Mat" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = None (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+
+                over "Mat" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </World/Desk/Mat/materials/Mat_Orange> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                }
+            }
+
+            def "Mouse" (
+                prepend payload = @./Assets/Mouse.usd@
+            )
+            {
+                float3 xformOp:rotateXYZ = (0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.18670012093964497, 0.004999999999999154, -0.04194660889695839)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Mouse"
+                {
+                    over "Mouse"
+                    {
+                        over "Mouse_Grey" (
+                            prepend apiSchemas = ["MaterialBindingAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Desk/Monitor/materials/Metal> (
+                                bindMaterialAs = "weakerThanDescendants"
+                            )
+                        }
+                    }
+                }
+
+                over "materials"
+                {
+                    over "Mouse_Grey" (
+                        active = false
+                    )
+                    {
+                    }
+                }
+            }
+
+            def "Keyboard" (
+                prepend payload = @./Assets/Keyboard.usd@
+            )
+            {
+                float3 xformOp:rotateXYZ = (0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.04, 0.004999999999999154, -0.04999999999999999)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "materials"
+            {
+                def Material "Mat_Orange"
+                {
+                    token outputs:displacement.connect = </World/Desk/Mat/materials/Mat_Orange/Shader.outputs:displacement>
+                    token outputs:surface.connect = </World/Desk/Mat/materials/Mat_Orange/Shader.outputs:surface>
+
+                    def Shader "Shader"
+                    {
+                        uniform token info:id = "UsdPreviewSurface"
+                        float inputs:clearcoat = 0 (
+                            customData = {
+                                float default = 0
+                                dictionary range = {
+                                    float max = 1
+                                    float min = 0
+                                }
+                            }
+                            hidden = false
+                        )
+                        float inputs:clearcoatRoughness = 0.01 (
+                            customData = {
+                                float default = 0.01
+                                dictionary range = {
+                                    float max = 1
+                                    float min = 0
+                                }
+                            }
+                            hidden = false
+                        )
+                        color3f inputs:diffuseColor = (0.16216218, 0.04507983, 0) (
+                            customData = {
+                                float3 default = (0.18, 0.18, 0.18)
+                            }
+                            hidden = false
+                            renderType = "color"
+                        )
+                        float inputs:displacement = 0 (
+                            customData = {
+                                float default = 0
+                            }
+                            hidden = false
+                        )
+                        color3f inputs:emissiveColor = (0, 0, 0) (
+                            customData = {
+                                float3 default = (0, 0, 0)
+                            }
+                            hidden = false
+                            renderType = "color"
+                        )
+                        float inputs:ior = 1.5 (
+                            customData = {
+                                float default = 1.5
+                                dictionary range = {
+                                    float max = 3.4028235e38
+                                    float min = 0
+                                }
+                                dictionary soft_range = {
+                                    float max = 5
+                                    float min = 1
+                                }
+                            }
+                            hidden = false
+                        )
+                        float inputs:metallic = 0 (
+                            customData = {
+                                float default = 0
+                                dictionary range = {
+                                    float max = 1
+                                    float min = 0
+                                }
+                            }
+                            hidden = false
+                        )
+                        normal3f inputs:normal = (0, 0, 1) (
+                            customData = {
+                                float3 default = (0, 0, 1)
+                                dictionary range = {
+                                    float3 max = (1, 1, 1)
+                                    float3 min = (-1, -1, -1)
+                                }
+                            }
+                            hidden = false
+                        )
+                        float inputs:occlusion = 1 (
+                            customData = {
+                                float default = 1
+                                dictionary range = {
+                                    float max = 1
+                                    float min = 0
+                                }
+                            }
+                            doc = """This parameter is unused.
+"""
+                            hidden = false
+                        )
+                        float inputs:opacity = 1 (
+                            customData = {
+                                float default = 1
+                                dictionary range = {
+                                    float max = 1
+                                    float min = 0
+                                }
+                            }
+                            hidden = false
+                        )
+                        float inputs:opacityThreshold = 0 (
+                            connectability = "interfaceOnly"
+                            customData = {
+                                float default = 0
+                                dictionary range = {
+                                    float max = 1
+                                    float min = 0
+                                }
+                            }
+                            hidden = false
+                        )
+                        float inputs:roughness = 0.74 (
+                            customData = {
+                                float default = 0.5
+                                dictionary range = {
+                                    float max = 1
+                                    float min = 0
+                                }
+                            }
+                            hidden = false
+                        )
+                        color3f inputs:specularColor = (0, 0, 0) (
+                            customData = {
+                                float3 default = (0, 0, 0)
+                            }
+                            hidden = false
+                            renderType = "color"
+                        )
+                        int inputs:useSpecularWorkflow = 0 (
+                            connectability = "interfaceOnly"
+                            customData = {
+                                int default = 0
+                                dictionary range = {
+                                    int max = 1
+                                    int min = 0
+                                }
+                                string widgetType = "checkBox"
+                            }
+                            hidden = false
+                        )
+                        token outputs:displacement (
+                            renderType = "material"
+                        )
+                        token outputs:surface (
+                            renderType = "material"
+                        )
+                    }
+                }
+            }
+        }
+    }
+
+    def Xform "Lights"
+    {
+        token visibility = "inherited"
+        double3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        def RectLight "Overhead_Light" (
+            prepend apiSchemas = ["ShapingAPI"]
+        )
+        {
+            float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+            float inputs:height = 50
+            float inputs:intensity = 15000
+            bool inputs:normalize = 0
+            float inputs:shaping:cone:angle = 180
+            float inputs:shaping:cone:softness
+            float inputs:shaping:focus
+            color3f inputs:shaping:focusTint
+            asset inputs:shaping:ies:file
+            float inputs:width = 75
+            token visibility = "inherited"
+            double3 xformOp:rotateXYZ = (-90, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0, 120, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def RectLight "SideLight" (
+            prepend apiSchemas = ["ShapingAPI"]
+        )
+        {
+            float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+            float inputs:height = 100
+            float inputs:intensity = 5000
+            bool inputs:normalize = 0
+            float inputs:shaping:cone:angle = 180
+            float inputs:shaping:cone:softness
+            float inputs:shaping:focus
+            color3f inputs:shaping:focusTint
+            asset inputs:shaping:ies:file
+            float inputs:width = 50
+            double3 xformOp:rotateXYZ = (0, 100, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (220, 60, -80)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+
+        def RectLight "FrontLight" (
+            prepend apiSchemas = ["ShapingAPI"]
+        )
+        {
+            float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+            float inputs:height = 1.8000001
+            float inputs:intensity = 8000
+            float inputs:shaping:cone:angle = 180
+            float inputs:shaping:cone:softness
+            float inputs:shaping:focus
+            color3f inputs:shaping:focusTint
+            asset inputs:shaping:ies:file
+            float inputs:width = 200
+            token visibility = "inherited"
+            double3 xformOp:rotateXYZ = (0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0, -12.251699201878436, 74.61303414594619)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+    }
+}
+
