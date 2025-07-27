@@ -42,6 +42,7 @@ project:
         - file: code_and_assets/Ch09/code_ch09.md
         - file: code_and_assets/Ch10/code_ch10.md
         - file: code_and_assets/Ch11/code_ch11.md
+        - file: code_and_assets/Ch12/code_ch12.md
     - title: Appendix
       children:
         - file: appendix/d.md
