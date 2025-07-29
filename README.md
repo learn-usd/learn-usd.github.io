@@ -5,8 +5,8 @@ author:
       github: linfanz
       email: linfanz95@outlook.com
     - name: Andy Green
-      github: andy250
-      email: andy250@gmail.com
+      github: LFG3D
+      email: andygreen250@gmail.com
     - name: Yizhou Zhao
       github: yizhouzhao
       email: yizzhao@nvidia.com
