@@ -201,7 +201,7 @@ stage.Save()
 Set working directory 
 ```python 
 import os    
-new_directory = <'/your/path/to/Ch06 ex:'D:/OpenUSDInAction/Ch06''>    
+new_directory = <'/your/path/to/Ch06 ex:'D://Ch06''>    
 os.chdir(new_directory)    
 ```
 Create a new stage 'fan_animation' and set the stage's properties with six-second animation at 24 fps

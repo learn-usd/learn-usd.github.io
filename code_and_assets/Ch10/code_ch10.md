@@ -431,7 +431,7 @@ milvus_client.create_collection(
 ```
 ```python
 # Define the base URL of the asset folder
-link = "https://github.com/yizhouzhao/OpenUSDInAction/tree/main/Ch09/NVIDIA_Assets/"    
+link = "https://github.com/learn-usd/learn-usd.github.io/tree/main/code_and_assets/Ch10/NVIDIA_Assets"    
 
 # Create a list of file names for the assets
 asset_names = ["RackSmallEmpty_A1.usd", "RackLongEmpty_A1.usd", "WoodenCrate_A1.usd", "MetalFencing_A2.usd"]    

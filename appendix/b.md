@@ -132,7 +132,7 @@ Blender supports importing various file formats, each with its own method. Each 
 
 However, importing .usd and .obj files is slightly different as it requires us to use the Window Manager Operations (bpy.ops.wm). For example, we could import an .obj file using bpy.ops.wm.obj_import(filepath="/path/to/your/file.obj"). 
 
-Let's apply this by importing an object into our current scene. We'll use the 'backdrop.usd' that we have provided in the 'Assets' folder for this Appendix. If you don't have it already, you can find it on our GitHub repo here: https://github.com/linfanz/OpenUSDInAction. 
+Let's apply this by importing an object into our current scene. We'll use the 'backdrop.usd' that we have provided in the 'Assets' folder for this Appendix. If you don't have it already, you can find it on our GitHub repo here: https://github.com/learn-usd/learn-usd.github.io/tree/main/code_and_assets/Appendix_B
 
 Run the following line in Blender to import the backdrop.usd:
 
@@ -365,7 +365,7 @@ camera = bpy.context.scene.objects.get("Camera_1")
 bpy.context.scene.camera = camera    
 
 # Set your image path (note the use of the r prefix to denote raw strings)
-bpy.context.scene.render.filepath = r"<your/path/to/save/image ex: C:\OpenUSDInAction\Appendix_B\Hello_World_Render.png"
+bpy.context.scene.render.filepath = r"<your/path/to/save/image ex: C:\\Appendix_B\Hello_World_Render.png"
 
 # Set the output resolution
 bpy.context.scene.render.resolution_x = 1920 
