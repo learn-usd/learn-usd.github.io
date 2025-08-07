@@ -31,6 +31,10 @@ project:
         - file: chapters/10.md
         - file: chapters/11.md
         - file: chapters/12.md
+    - title: Appendix
+      children:
+        - file: appendix/a.md
+        - file: appendix/b.md
     - title: Source Code
       children:
         - file: code_and_assets/Ch03/code_ch03.md
@@ -43,14 +47,12 @@ project:
         - file: code_and_assets/Ch10/code_ch10.md
         - file: code_and_assets/Ch11/code_ch11.md
         - file: code_and_assets/Ch12/code_ch12.md
-    - title: Appendix
-      children:
-        - file: appendix/a.md
+    
     
 site:
   nav:
-    - title: Home
-      url: https://learn-usd.github.io/
+    # - title: Home
+    #   url: https://learn-usd.github.io/
     - title: Code
       url: https://github.com/learn-usd/learn-usd.github.io/tree/main/
     - title: About
