@@ -1,21 +1,17 @@
----
-title: OpenUSD in One Weekend
-author: 
-    - name: Linfan Zhang
-      github: linfanz
-      email: linfanz95@outlook.com
-    - name: Andy Green
-      github: LFG3D
-      email: andygreen250@gmail.com
-    - name: Yizhou Zhao
-      github: yizhouzhao
-      email: yizzhao@nvidia.com
----
+# OpenUSD in One Weekend Book Series
 
-# OpenUSD in One Weekend
+# Getting the Books
+The OpenUSD in One Weekend series of books are now available to the public for free directly from the web: https://learn-usd.github.io/
 
+## Version 1.0.0
+- [OpenUSD in One Weekend: Before We Begin](https://learn-usd.github.io/0/)
+- [OpenUSD in One Weekend: Day One](https://learn-usd.github.io/3/)
+- [OpenUSD in One Weekend: Day Two](https://learn-usd.github.io/6/)
+- [OpenUSD in One Weekend: After the Weekend](https://learn-usd.github.io/10/)
 
-✅ Next Steps
+These books have been formatted for via [Jupyter Book](https://next.jupyterbook.org/) . For more information about printing your own copies, or on getting PDFs of the books, see PRINTING.md for more information.
+
+<!-- ✅ Next Steps
 
 1. Navigate to your GitHub Pages settings
 
@@ -32,4 +28,4 @@ author:
 
     https://learn-usd.github.io/learn-usd.github.io
 
-7. 🎉 Celebrate and tell us about your site on Twitter or Mastodon! 🐦 🐘
+7. 🎉 Celebrate and tell us about your site on Twitter or Mastodon! 🐦 🐘 -->
