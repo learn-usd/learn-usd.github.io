@@ -35,6 +35,7 @@ project:
       children:
         - file: appendix/a.md
         - file: appendix/b.md
+        - file: appendix/c.md
     - title: Source Code
       children:
         - file: code_and_assets/Ch03/code_ch03.md
