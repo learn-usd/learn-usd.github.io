@@ -1,7 +1,7 @@
 OpenUSD in One Weekend Book Series
 ====================================================================================================
 
-|<img src="./images/1.png" width=280>|<img src="./images/2.png" width=280>|<img src="./images/3.png" width=280>|<img src="./images/4.png" width=280>|
+|<img src="./images/1.png" width=200>|<img src="./images/2.png" width=200>|<img src="./images/3.png" width=200>|<img src="./images/4.png" width=200>|
 |:----------------------------:|:----------------------------:|:----------------------------:|:----------------------------:|
 |[Before We Begin](./chapters/0.md)|[Day One](./chapters/3.md)|[Day Two](./chapters/6.md)|[After the Weekend](./chapters/10.md)|
 
