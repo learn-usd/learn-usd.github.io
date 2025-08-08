@@ -1,9 +1,14 @@
 OpenUSD in One Weekend Book Series
 ====================================================================================================
 
-|<div style="width:200px; height:350px; overflow:hidden;"><img src="./images/1.png" style="width:100%; height:100%; object-fit:cover;"></div>|<div style="width:200px; height:350px; overflow:hidden;"><img src="./images/2.png" style="width:100%; height:100%; object-fit:cover;"></div>|<div style="width:200px; height:350px; overflow:hidden;"><img src="./images/3.png" style="width:100%; height:100%; object-fit:cover;"></div>|<div style="width:200px; height:350px; overflow:hidden;"><img src="./images/4.png" style="width:100%; height:100%; object-fit:cover;"></div>|
-|:----------------------------:|:----------------------------:|:----------------------------:|:----------------------------:|
-|[Before We Begin](./chapters/0.md)|[Day One](./chapters/3.md)|[Day Two](./chapters/6.md)|[After the Weekend](./chapters/10.md)|
+|<div style="width:260px; overflow:hidden;"><img src="./images/1.png" style="width:100%; object-fit:contain;"></div>|<div style="width:260px; overflow:hidden;"><img src="./images/2.png" style="width:100%; object-fit:contain;"></div>|
+|:----------------------------:|:----------------------------:|
+|[Before We Begin](./chapters/0.md)|[Day One](./chapters/3.md)|
+
+|<div style="width:260px; overflow:hidden;"><img src="./images/3.png" style="width:100%; object-fit:contain;"></div>|<div style="width:260px; overflow:hidden;"><img src="./images/4.png" style="width:100%; object-fit:contain;"></div>|
+|:----------------------------:|:----------------------------:|
+|[Day Two](./chapters/6.md)|[After the Weekend](./chapters/10.md)|
+
 
 
 
