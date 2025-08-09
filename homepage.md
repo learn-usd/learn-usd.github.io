@@ -1,30 +1,63 @@
-# Introduction
+ # OpenUSD in One Weekend
 
-+++ {"part": "abstract"}
-This is my abstract!
-+++
+<div align="center">
+  <img src="./images/logo.png" alt="OpenUSD Logo" width="800px">
+</div>
 
-I am a book about ... something! Wikipedia has [information about books](wiki:book): hover over the link for more information.
+Welcome to **OpenUSD in One Weekend** — your gateway to mastering Universal Scene Description (USD), the industry-standard framework revolutionizing 3D content creation and collaboration.
 
-% An admonition containing a note
-:::{note}
-Books are usually written on paper ... But Jupyter Book can create _websites_!
-:::
+## What You'll Learn
 
-If you sold 100 books at \$10 per book, you'd have \$1000 dollars according to [](#eq:book). If instead you publish your Jupyter Book to the web for free, you'd have \$0 dollars!
+This book series is designed as a practical, weekend-intensive journey through OpenUSD. Whether you're a 3D artist, technical director, software developer, or curious enthusiast, you'll gain hands-on experience with:
 
-% An arbitrary math equation
-:::{math}
-:name: eq:book
+- **Core USD Concepts**: Stages, layers, prims, and the fundamental building blocks of USD scenes
+- **Python Scripting**: Programmatic creation and manipulation of USD files using Python APIs
+- **Asset Management**: Building modular, reusable 3D assets and complex scene hierarchies
+- **Animation & Dynamics**: Creating time-varying data, animations, and physics simulations
+- **Advanced Workflows**: Multi-layered compositions, variants, and collaborative pipelines
+- **Real-World Applications**: From digital twins to metaverse content creation
 
-x \times y = z
-:::
+This book focuses on **Python scripting** with OpenUSD rather than GUI-based workflows. You'll learn to harness the full programmatic power of USD, enabling automation, customization, and scalable 3D production pipelines.
 
-Sometimes when reading it is helpful to foster a _tranquil_ environment. The image in [](#fig:mountains) would be a perfect spot!
+## Why OpenUSD Matters
 
-% A figure of a photograph of some mountains, followed by a caption
-:::{figure} https://github.com/rowanc1/pics/blob/main/mountains.png?raw=true
-:label: fig:mountains
+OpenUSD isn't just another 3D file format — it's a comprehensive ecosystem designed for the future of 3D content. Originally developed by Pixar and now stewarded by the Alliance for OpenUSD (AOUSD), USD has become the foundation for:
 
-A photograph of some beautiful mountains to look at whilst reading.
-:::
+- **Film & Animation**: Major studios use USD for complex production pipelines
+- **Games & Interactive Media**: Real-time engines leverage USD for asset streaming
+- **Industrial Metaverse**: Manufacturing and simulation workflows built on USD
+- **AI & Machine Learning**: Training datasets and synthetic content generation
+
+
+
+## Book Structure
+
+This series is organized as a progressive weekend learning experience:
+
+**Before We Begin** 🎨
+: Get inspired by Andy's artistic USD creations, understand the USD ecosystem, and set up your development environment
+
+**Day One** ⚡
+: Master the fundamentals — create your first USD files, understand scene composition, and build reusable assets
+
+**Day Two** 🚀  
+: Dive into advanced topics — animation, physics simulation, complex scene assembly, and optimization techniques
+
+**After the Weekend** 🌟
+: Explore cutting-edge applications, integration with modern tools, and prepare for production workflows
+
+## Who This Book Is For
+
+- **3D Artists** transitioning to code-driven workflows
+- **Technical Directors** building USD-based pipelines  
+- **Software Developers** entering the 3D graphics domain
+- **Researchers** working with synthetic datasets and simulations
+- **Students** learning modern 3D content creation technologies
+
+## Prerequisites
+
+- Basic Python programming knowledge
+- Familiarity with 3D concepts (geometry, transformations, materials)
+- Willingness to learn through hands-on coding
+
+Ready to transform your weekend into a USD mastery journey? Let's begin!
