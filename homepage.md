@@ -1,10 +1,12 @@
  # OpenUSD in One Weekend
 
 <div align="center">
-  <img src="./images/logo.png" alt="OpenUSD Logo" width="800px">
+  <img src="./images/logo.png" alt="OpenUSD weekend" width="800px">
 </div>
 
-Welcome to **OpenUSD in One Weekend** — your gateway to mastering Universal Scene Description (USD), the industry-standard framework revolutionizing 3D content creation and collaboration.
+Welcome to **OpenUSD in One Weekend** — your gateway to mastering [Universal Scene Description (USD)](https://openusd.org/release/index.html), the industry-standard framework revolutionizing 3D content creation and collaboration.
+
+<img src="https://www.nvidia.com/en-us/learn/learning-path/openusd/_jcr_content/root/responsivegrid/nv_container_copy_co/nv_container/nv_image_copy.coreimg.svg/1753804374309/openusd-logo.svg" alt="OpenUSD official">
 
 ## What You'll Learn
 
