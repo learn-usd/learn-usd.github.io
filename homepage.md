@@ -23,6 +23,9 @@ This book focuses on **Python scripting** with OpenUSD rather than GUI-based wor
 
 ## Accessibility & Platform Support
 
+
+Tested on recent versions of macOS, Ubuntu/Debian-based Linux distributions, and Windows 10/11.
+
 <p align="center">
   <img alt="macOS" src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white">
   <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
@@ -77,9 +80,5 @@ This series is organized as a progressive weekend learning experience:
 - Familiarity with 3D concepts (geometry, transformations, materials)
 - Willingness to learn through hands-on coding
 
-
-
-
-Tested on recent versions of macOS, Ubuntu/Debian-based Linux distributions, and Windows 10/11.
 
 Ready to transform your weekend into a USD mastery journey? Let's begin!
