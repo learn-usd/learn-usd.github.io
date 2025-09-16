@@ -208,3 +208,7 @@ __marimo__/
 
 # MyST build outputs
 _build
+
+# ignore .DS_Store from any directory
+.DS_Store
+**/.DS_Store
