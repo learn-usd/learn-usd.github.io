@@ -63,7 +63,7 @@ project:
     - format: pdf
       template: lapreprint-typst
       articles:
-        - chapters/0.md
+        - chapters/12.md
   latex:
     use_jupyterbook_latex: true 
     
